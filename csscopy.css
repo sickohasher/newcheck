@@ -1,0 +1,132 @@
+.mainDiv{
+    height: 800px;
+    width: 800px;
+    display: grid;
+    grid-template-rows: repeat(12,1fr);
+    grid-template-columns: repeat(12,1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+   
+   
+}
+
+
+#bx1{
+    background-color: pink;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    
+} 
+
+#bx2{
+
+    background-color: pink;
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    grid-row-end: span 10;
+}
+
+#bx3{
+    background-color: pink;
+    grid-column-start: 4;
+    grid-column-end: span 6;
+    grid-row-start: span 1;
+}
+
+#bx4{
+    background-color: pink;
+    grid-column-start: 4;
+    grid-column-end: span 6;
+    grid-row-start: 3;
+    grid-row-end: span 9;
+}
+
+#bx5{
+    background-color: pink;
+    grid-column-end: 13;
+    grid-column-start: 10;
+    grid-row-start: span 10;
+
+
+}
+
+#bx6{
+    background-color: pink;
+    grid-row-start: 12;
+    grid-column-end: 13;
+    grid-column-start: 1;
+}
+
+@media (max-width: 720px){
+
+    #bx1{
+        background-color: pink;
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-column-end: 13;
+        
+    } 
+
+    #bx3{
+        background-color: pink;
+        grid-column-start: 1;
+        grid-column-end: span 12;
+        grid-row-start: 2;
+    }
+
+    #bx2{
+
+        background-color: pink;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 12;
+    }
+
+    #bx4{
+        background-color: pink;
+        grid-column-start: 4;
+        grid-column-end: 13;
+        grid-row-start: 3;
+        grid-row-end: 12;
+    }
+
+
+#bx5{
+    background-color: pink;
+    grid-column-end: span 3;
+    grid-column-start: 1;
+    grid-row-start: 12;
+
+
+}
+
+#bx6{
+    background-color: pink;
+    grid-row-start: 12;
+    grid-column-end: 13;
+    grid-column-start: 4;
+}
+
+}
+
+
+.loader{
+    border:16px solid #f3f3f3;
+    border-left:16px solid goldenrod;
+    border-radius:50%;
+    width:120px;
+    height:120px;
+    animation: spin 1s ease-in-out infinite;
+}
+    @keyframes spin { 
+        0%{
+            rotate: 0deg;
+        }
+
+    
+        
+        100%{
+            rotate: 360deg;
+        }}
